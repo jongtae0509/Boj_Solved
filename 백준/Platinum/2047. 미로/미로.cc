@@ -5,11 +5,11 @@ using namespace std;
 #define Y second
 int dx[4]={1,0,-1,0};
 int dy[4]={0,1,0,-1};
+queue<pair<int,int>> q;
 
 int main(){
     int t; cin >> t;
     while(t--){
-        queue<pair<int,int>> q;
         double ans = 0;
         string map[100]={};
         bool vis[100][100]={};
